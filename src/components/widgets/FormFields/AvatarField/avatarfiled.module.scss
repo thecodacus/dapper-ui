@@ -1,0 +1,52 @@
+.avatar-field{
+  position: relative;
+  margin: auto;
+  .avatar{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: #955baca1;
+    border-style: solid;
+    overflow: hidden;
+
+    .avatarImage{
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+    }
+  }
+  .input-container{
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    top: 0;
+    left: 0;
+    .avatar-file-input {
+      color: transparent;
+      background-color: rgb(191 148 148);
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+    }
+    .avatar-file-input::-webkit-file-upload-button {
+      visibility: hidden;
+    }
+    .avatar-file-input::before {
+      content: ' ';
+      width: 15rem;
+      height: 15rem;
+    }
+    .avatar-file-input:hover::before {
+      border-color: black;
+    }
+    .avatar-file-input:active {
+      outline: 0;
+    }
+    .avatar-file-input:active::before {
+      background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+    }
+  }
+}
